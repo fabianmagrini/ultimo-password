@@ -3,7 +3,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import './Settings.css';
 import Slider from '../../slider/Slider';
 import CheckBox from '../../checkbox/CheckBox';
-import { generatePassword, setPasswordLength, copyToClipBoard } from '../../../utils/PasswordHelper';
+import { generatePassword, setPasswordLength } from '../../../utils/PasswordHelper';
 
 const CHECKBOX_LIST = [
     {
@@ -33,7 +33,7 @@ const CHECKBOX_LIST = [
 ];
 
 const Settings = props => {
-    const { setPassword, setRange, setPasswordProps, passwordRef, type } = props;
+    const { setPassword, setRange, setPasswordProps, type } = props;
 
     const [rangeValue, setRangeValue] = useState(12);
     const [checkbox, setCheckBox] = useState({

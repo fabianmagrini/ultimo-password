@@ -101,7 +101,6 @@ const PasswordGenerator = () => {
                 setPassword={setPassword}
                 setRange={setRange}
                 setPasswordProps={setPasswordProps}
-                passwordRef={passwordRef}
             />
 
         </>
